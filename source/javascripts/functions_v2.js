@@ -325,26 +325,13 @@ $("a.anchor[href*='#']").click(function(event) {
 	}
 });
 
-var loadDone = function (svg, error) { 
-  console.log(10, 20, error || svg + ' loaded into ' + this.id); 
-}
 
-// var svg = $('#header h1').svg('get'); 
-// 
-// svg.load("/images/deck2.svg", {addTo: false, 
-//    changeSize: false, 
-//    onLoad: loadDone}
-// ); 
-//    
-// resetSize(svg); 
- 
-/* Callback after loading external document */ 
-// function loadDone(svg, error) { 
-//     svg.text(10, 20, error || 'Loaded into ' + this.id);
-// }
-// 
 // $('#header h1').load("/images/deck2.svg");
 
+if (!Modernizr.svg) {
+  console.log 'no svg support, falling back to png'
+  $("h1").innerHtml('<img src="/images/deck_logo.png"></img>');
+}
 
 $('#map').css({ height: $(window).height() +'px' });
 
