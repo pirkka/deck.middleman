@@ -946,6 +946,7 @@ $.extend(SVGWrapper.prototype, {
 	                                   into, defaults to top-level svg element
 	   @return  (SVGWrapper) this root */
 	load: function(url, settings) {
+	  console.log('loading svg...');
 		settings = (typeof settings == 'boolean' ? {addTo: settings} :
 			(typeof settings == 'function' ? {onLoad: settings} :
 			(typeof settings == 'string' ? {parent: settings} : 
@@ -1028,7 +1029,8 @@ $.extend(SVGWrapper.prototype, {
 				new DOMParser().parseFromString(url, 'text/xml'));
 		}
 		else { // Remote SVG
-			$.ajax({url: url, dataType: ($.browser.msie ? 'text' : 'xml'),
+		  console.log('remote sSVG...');
+			$.ajax({url: url, type: 'get', dataType: ($.browser.msie ? 'text' : 'xml'),
 				success: function(xml) {
 					loadSVG($.browser.msie ? loadXML4IE(xml) : xml);
 				}, error: function(http, message, exc) {

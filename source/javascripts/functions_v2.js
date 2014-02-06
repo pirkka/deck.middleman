@@ -325,15 +325,30 @@ $("a.anchor[href*='#']").click(function(event) {
 	}
 });
 
-
-$('#header h1').load("/images/deck2.svg", {
-  addTo: true, 
-  changeSize: false, 
-  onLoad: loadDone
-});
-function loadDone(svg, error) { 
-  //console.log(10, 20, error || svg + ' loaded into ' + this.id); 
+var loadDone = function (svg, error) { 
+  console.log(10, 20, error || svg + ' loaded into ' + this.id); 
 }
+
+// var svg = $('#header h1').svg('get'); 
+// 
+// svg.load("/images/deck2.svg", {addTo: false, 
+//    changeSize: false, 
+//    onLoad: loadDone}
+// ); 
+//    
+// resetSize(svg); 
+ 
+/* Callback after loading external document */ 
+function loadDone(svg, error) { 
+    svg.text(10, 20, error || 'Loaded into ' + this.id);
+}
+
+// $('#header h1').load("/images/deck2.svg", {
+//   addTo: true, 
+//   changeSize: false, 
+//   onLoad: loadDone
+// });
+
 
 $('#map').css({ height: $(window).height() +'px' });
 

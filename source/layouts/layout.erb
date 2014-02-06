@@ -33,8 +33,9 @@
   <%= stylesheet_link_tag "main_v2" %>
 	<link rel="stylesheet" href="stylesheets/jquery.svg.css"> 
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script>!window.jQuery && document.write('<script src="/javascripts/jquery-1.7.min.js"><\/script>')</script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	  <script>!window.jQuery && document.write('<script src="/javascripts/jquery-1.7.min.js"><\/script>')</script>
+	  
     <%= javascript_include_tag  "modernizr.custom.24162" %>
     <%= javascript_include_tag  "respond.min" %>
     <%= javascript_include_tag  "jquery.svg/jquery.svg" %>
@@ -56,6 +57,11 @@
 <div id="header">
 <header class="row container">
 	<h1 class="svg">Deck</h1>
+	<!--
+	<object data="/images/deck2.svg" type="image/svg+xml">
+    <img src="/path-to/your-fallback-image.png" />
+  </object>
+	-->
 	<div class="divider"></div>	
 	<img src="/images/pursari2@2x.jpg" alt="Pursimiehenkatu 26" />
 	<div class="divider"></div>
@@ -188,11 +194,14 @@
   </article>
   
   <article class="sixcol last">
-    <h3>Juha Solla</h3>
-    <p>T:mi J. Solla</p>
+    <h3>Jonatan Hedberg</h3>
+    <p>Formatura</p>
     <ul class="social">
-      <li><a href="http://www.linkedin.com/pub/pirkka-esko/2/a21/478" class="linkedin"><span class="icon-linkedin"></span><span class="label">Linkedin</span></a></li>
-      <li><a href="https://twitter.com/PirkkaEsko" class="twitter"><span class="icon-twitter"></span><span class="label">Twitter</span></a></li>
+      <li><a href="http://fi.linkedin.com/in/jonatanhedberg/" class="linkedin"><span class="icon-linkedin"></span><span class="label">Linkedin</span></a></li>
+      <li><a href="http://www.formatura.org/" class="web"><span class="icon-link"></span><span class="label">Website</span></a></li>    
+      
+      
+      
     </ul>
   </article>
 
