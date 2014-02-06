@@ -329,9 +329,10 @@ $("a.anchor[href*='#']").click(function(event) {
 // $('#header h1').load("/images/deck2.svg");
 
 if (!Modernizr.svg) {
-  console.log 'no svg support, falling back to png'
-  $("h1").innerHtml('<img src="/images/deck_logo.png"></img>');
+  console.log('no svg support, falling back to png');
+  $("h1").html('<img style="border: none;" src="/images/deck_logo.png"></img>');
 }
+
 
 $('#map').css({ height: $(window).height() +'px' });
 
