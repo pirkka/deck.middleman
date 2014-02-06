@@ -343,11 +343,11 @@ function loadDone(svg, error) {
     svg.text(10, 20, error || 'Loaded into ' + this.id);
 }
 
-// $('#header h1').load("/images/deck2.svg", {
-//   addTo: true, 
-//   changeSize: false, 
-//   onLoad: loadDone
-// });
+$('#header h1').load("/images/deck2.svg", {
+  addTo: true, 
+  changeSize: false, 
+  onLoad: loadDone
+});
 
 
 $('#map').css({ height: $(window).height() +'px' });
