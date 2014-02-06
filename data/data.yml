@@ -1,69 +1,11 @@
-personnel:
-  - name: Iina Esko
-    title: valokuvaaja
-    description: |
-      Iina esko is a freelance photographer living in Helsinki.
-    www: www.iinaesko.com
-  - name: Antti Grundstén
-    title: graafinen suunnittelija
-    description: |
-      Lorem ipsum blaablaa dolor shit amen. 
-      Lorem ipsum blaablaa dolor shit amen. Lorem ipsum blaablaa dolor shit amen. 
-      Lorem ipsum blaablaa dolor shit amen. Lorem ipsum blaablaa dolor. 
-      Lorem ipsum blaablaa dolor shit amen.
-    www: cargocollective.com/anttigrundsten
-  - name: Martin Martonen
-    title: graafinen suunnittelija
-    description: |
-      Lorem ipsum blaablaa dolor shit amen. 
-      Lorem ipsum blaablaa dolor shit amen. Lorem ipsum blaablaa dolor shit amen. 
-      Lorem ipsum blaablaa dolor shit amen. Lorem ipsum blaablaa dolor. 
-      Lorem ipsum blaablaa dolor shit amen.
-    www: www.martinmartonen.com
-  - name: Matti Nives
-    title: toimittaja
-    description: |
-      Lorem ipsum blaablaa dolor shit amen. 
-      Lorem ipsum blaablaa dolor shit amen. Lorem ipsum blaablaa dolor shit amen. 
-      Lorem ipsum blaablaa dolor shit amen. Lorem ipsum blaablaa dolor. 
-      Lorem ipsum blaablaa dolor shit amen.
-    www: twitter.com/nivestweets
-    
+tenants:
+  - name: Pirkka Esko
+    www: www.pirkkaesko.com
+    twitter: PirkkaEsko
+    linkedin: pub/pirkka-esko/2/a21/478    
 
-retailers:
-  - name: Akateeminen kirjakauppa
-    address: Keskuskatu 1
-    city: Helsinki
-    www: akateeminen.com
-  - name: Digelius
-    address: Laivurinrinne 2
-    city: Helsinki
-    www: www.digelius.com
-  - name: Eronen
-    address: Laivurinrinne 2
-    city: Helsinki
-    www: www.dubjazzsalsa.fi
-  - name: mbar
-    address: Mannerheimintie 22-24
-    city: Helsinki
-    www: www.mbar.fi
-  - name: Levykauppa Äx
-    address: Arkadiankatu 14
-    city: Helsinki
-    www: www.levykauppax.fi
-  - name: Stupido Shop
-    address: Helsinginkatu 16
-    city: Helsinki
-    www: www.stupido.fi
-  - name: Suomalainen kirjakauppa
-    address: Uudenmaankatu 120 B 75
-    city: Helsinki
-    www: www.suomalainen.com
-  - name: Taidehalli
-    address: Nervanderinkatu 3
-    city: Helsinki
-    www: www.taidehalli.fi
-  - name: Turun kansallinen kirjakauppa
-    address: Linnankatu 16
-    city: Turku
-    www: www.kansallinenkirjakauppa.fi
+languages:
+  fi:
+    description: Deck is a co-working space in Helsinki. Our tenants form a synergistic working community for design and software freelancers.
+  en:
+    description: Deck is a co-working space in Helsinki. Our tenants form a synergistic working community for design and software freelancers.
