@@ -1,0 +1,45 @@
+/* -----------------------------------------------------------------------
+
+
+ Blueprint CSS Framework 1.0
+ http://blueprintcss.org
+
+   * Copyright (c) 2007-Present. See LICENSE for more info.
+   * See README for instructions on how to use Blueprint.
+   * For credits and origins, see AUTHORS.
+   * This is a compressed file. See the sources in the 'src' directory.
+
+----------------------------------------------------------------------- */
+
+/* ie.css */
+* html .column, * html .span-1, * html .span-2, * html .span-3, * html .span-4, * html .span-5, * html .span-6, * html .span-7, * html .span-8, * html .span-9, * html .span-10, * html .span-11, * html .span-12, * html .span-13, * html .span-14, * html .span-15, * html .span-16, * html .span-17, * html .span-18, * html .span-19, * html .span-20, * html .span-21, * html .span-22, * html .span-23, * html .span-24 {display:inline;overflow-x:hidden;}
+* html legend {margin:0px -8px 16px 0;padding:0;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+html>body p code {*white-space:normal;}
+hr {margin:-8px auto 11px;}
+img {-ms-interpolation-mode:bicubic;}
+.clearfix, .container {display:inline-block;}
+* html .clearfix, * html .container {height:1%;}
+fieldset {padding-top:0;}
+legend {margin-top:-0.2em;margin-bottom:1em;margin-left:-0.5em;}
+textarea {overflow:auto;}
+label {vertical-align:middle;position:relative;top:-0.25em;}
+input.text, input.title, textarea {background-color:#fff;border:1px solid #bbb;}
+input.text:focus, input.title:focus {border-color:#666;}
+input.text, input.title, textarea, select {margin:0.5em 0;}
+input.checkbox, input.radio {position:relative;top:.25em;}
+form.inline div, form.inline p {vertical-align:middle;}
+form.inline input.checkbox, form.inline input.radio, form.inline input.button, form.inline button {margin:0.5em 0;}
+button, input.button {position:relative;top:0.25em;}
+
+* html .column, * html .grid-1, * html .grid-2, * html .grid-3, * html .grid-4, * html .grid-5, * html .grid-6, * html .grid-7, * html .grid-8, * html .grid-9, * html .grid-10, * html .grid-11, * html .grid-12, * html .grid-13, * html .grid-14, * html .grid-15, * html .grid-16, * html .grid-17, * html .grid-18, * html .grid-19, * html .grid-20, * html .grid-21, * html .grid-22, * html .grid-23, * html .grid-24 {display:inline;overflow-x:hidden;}
+
+/* rounded corners */
+/*
+ul#navi li#home a {
+	 behavior: url(http://webdev.kuva.fi/css/border-radius.htc);
+	 background: #ff6e00 url('../images/layout/ico-koti.png') 5px 7px no-repeat;
+	 position: relative;
+}
+*/

@@ -1,0 +1,137 @@
+/* -----------------------------------------------------------------------
+
+ Blueprint CSS Framework 0.8
+ http://blueprintcss.org
+
+   * Copyright (c) 2007-Present. See LICENSE for more info.
+   * See README for instructions on how to use Blueprint.
+   * For credits and origins, see AUTHORS.
+   * This is a compressed file. See the sources in the 'src' directory.
+
+----------------------------------------------------------------------- */
+
+/* reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:2em;margin-bottom:0.75em;}
+h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {margin:0 0 1.2em;}
+p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+a.left { float: left; }
+a.right { float: right; }
+p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
+a:focus, a:hover {color:#333;}
+a {color:#009;text-decoration:underline;}
+blockquote {margin:1.5em;color:#666;font-style:italic;}
+strong {font-weight:bold;}
+em, dfn {font-style:italic;}
+dfn {font-weight:bold;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0 1.5em;}
+ul, ol {margin:0 0 1.5em 0;}
+ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+table {margin-bottom:2em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+td { vertical-align: top; padding-left: 0px; }
+tr.even td {background:#e5ecf9;}
+tfoot {font-style:italic;}
+caption {background:#eee;}
+.small {font-size:.9em;}
+.large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.hide, .print-only {display:none;}
+.quiet {color:#666; font-weight: normal; }
+.loud {color:#000;}
+.highlight {background:#ff0;}
+.added {background:#060;color:#fff;}
+.removed {background:#900;color:#fff;}
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+.top {margin-top:0;padding-top:0;}
+.bottom {margin-bottom:0;padding-bottom:0;}
+.strong {font-weight: bold;}
+.block {display: block;}
+
+div#wrapper {
+	display: block;
+	position: relative;
+	z-index: 1;
+	width: 970px;
+	margin: 30px auto;
+	background: #ffffff; 
+	background: url(../images/layout/bg-75.png) repeat;
+	overflow-x: hidden;
+}
+
+hr {background:#999;color:#999;clear:both;float:none;width:100%;height:1px;margin:0 0 1.45em;border:none;}
+hr.space {background:#fff;color:#fff;}
+.clearfix:after, .container:after, ul.product-listing.listing-view li a:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix, .container {display:block;}
+.clear { clear:both; }
+div.clear {
+	height: 0px; 
+	overflow: hidden;
+}
+.clear-left { clear: left; }
+.uc { text-transform: uppercase; }
+.center { text-align: center; }
+
+/* forms.css */
+label {font-weight:normal; display: block; font-family: Georgia, Times, 'Times new roman', serif; font-size: 13px; color: #7d7d7d; margin: 5px 0 -14px 0; }
+fieldset {padding:0;margin:0;border:none;}
+legend {font-weight:bold;font-size:1.2em;}
+input[type=text] { background-color: #333; border: 0px; margin-bottom: 10px; font-size: 12px;  }
+input.text, input.title, textarea, select {margin:0 0 5px 0; border: 0px;}
+input.text:focus, input.title:focus, textarea:focus, select:focus {
+	/*border:1px solid #c9c9c9;*/
+	border: 0px !important;
+	outline: 0;
+	padding: inherit;
+/*	
+box-shadow: 0 0 5px rgba(18, 142, 238, 1);
+-webkit-box-shadow: 0 0 5px rgba(18, 142, 238, 1);
+-moz-box-shadow: 0 0 5px rgba(18, 142, 238, 1);
+transition: all 0.20s ease-in-out;
+-webkit-transition: all 0.20s ease-in-out;
+-moz-transition: all 0.20s ease-in-out;
+*/
+}
+input:focus {
+	outline: 0 !important;
+}
+/*input.text, input.title { padding: 7px;}*/
+input.title {font-size:1.5em;}
+textarea { padding: 7px; margin-bottom: 10px; font-family: 'Lucida Grande', Tahoma, Helvetica, Arial, sans-serif; font-size: 12px !important; }
+.error, .notice, .success {padding: 9px 14px 10px 14px; font-size: 13px; margin-bottom:1em; margin-right: 0; border:none;}
+.error {background:#FBE3E4;color:#8a1f11 !important;border-color:#FBC2C4;}
+.notice {background:#FFF6BF;color:#514721 !important;border-color:#FFD324;}
+.success {background:#E6EFC2;color:#264409 !important;border-color:#C6D880;}
+.error a {color:#8a1f11;}
+/* .notice a, p.notice a { color:#514721 !important; border-bottom: none !important; padding: 0 !important; } */
+.success a {color:#264409;}
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input.button, input[type=submit], button { cursor: pointer; }

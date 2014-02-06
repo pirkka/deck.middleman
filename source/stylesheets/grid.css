@@ -1,0 +1,67 @@
+/* -----------------------------------------------------------------------
+
+
+ Blueprint CSS Framework 1.0
+ http://blueprintcss.org
+
+   * Copyright (c) 2007-Present. See LICENSE for more info.
+   * See README for instructions on how to use Blueprint.
+   * For credits and origins, see AUTHORS.
+   * This is a compressed file. See the sources in the 'src' directory.
+
+----------------------------------------------------------------------- */
+
+/* grid.css */
+.container {width:1116px;margin:0 auto;}
+.showgrid {background:url(src/grid.png);}
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6 {float:left;margin-right:12px;}
+.last {margin-right:0;}
+.span-1 {width:176px;}
+.span-2 {width:364px;}
+.span-3 {width:552px;}
+.span-4 {width:740px;}
+.span-5 {width:928px;}
+.span-6 {width:1116px;margin-right:0;}
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6 {border-left-width:1px;border-right-width:1px;padding-left:5px;padding-right:5px;}
+input.span-1, textarea.span-1 {width:164px;}
+input.span-2, textarea.span-2 {width:352px;}
+input.span-3, textarea.span-3 {width:540px;}
+input.span-4, textarea.span-4 {width:728px;}
+input.span-5, textarea.span-5 {width:916px;}
+input.span-6, textarea.span-6 {width:1104px;}
+.append-1 {padding-right:188px;}
+.append-2 {padding-right:376px;}
+.append-3 {padding-right:564px;}
+.append-4 {padding-right:752px;}
+.append-5 {padding-right:940px;}
+.prepend-1 {padding-left:188px;}
+.prepend-2 {padding-left:376px;}
+.prepend-3 {padding-left:564px;}
+.prepend-4 {padding-left:752px;}
+.prepend-5 {padding-left:940px;}
+.border {padding-right:5px;margin-right:6px;border-right:1px solid #ddd;}
+.colborder {padding-right:99px;margin-right:100px;border-right:1px solid #ddd;}
+.pull-1 {margin-left:-188px;}
+.pull-2 {margin-left:-376px;}
+.pull-3 {margin-left:-564px;}
+.pull-4 {margin-left:-752px;}
+.pull-5 {margin-left:-940px;}
+.pull-6 {margin-left:-1128px;}
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6 {float:left;position:relative;}
+.push-1 {margin:0 -188px 1.5em 188px;}
+.push-2 {margin:0 -376px 1.5em 376px;}
+.push-3 {margin:0 -564px 1.5em 564px;}
+.push-4 {margin:0 -752px 1.5em 752px;}
+.push-5 {margin:0 -940px 1.5em 940px;}
+.push-6 {margin:0 -1128px 1.5em 1128px;}
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6 {float:left;position:relative;}
+div.prepend-top, .prepend-top {margin-top:1.5em;}
+div.append-bottom, .append-bottom {margin-bottom:1.5em;}
+.prepend-top2 {margin-top:1em;}
+.append-bottom2 {margin-bottom:3em;}
+.box {padding:1.5em;margin-bottom:1.5em;background:#e5eCf9;}
+hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margin:0 0 1.45em;border:none;}
+hr.space {background:#fff;color:#fff;visibility:hidden;}
+.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix, .container {display:block;}
+.clear {clear:both;}
