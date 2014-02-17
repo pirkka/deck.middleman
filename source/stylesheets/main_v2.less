@@ -234,18 +234,23 @@ svg {
   z-index: 1;
   h1 {
     width: 50%;
-    margin: 15% auto 0 auto;;
+    margin: 15% auto 0 auto;
     margin: 15vh auto 0 auto;
     padding: 0;
     line-height: 100%;
     text-align: center;
     color: #fff;
   }
-  svg {
+  object, .fallback {
+    display: block;
+    width: 100%;
+  }
+  .svg {
     fill: @bluecolor;
     display: block;
+    margin: 0 auto;
   }
-  img {
+  .img {
     margin: 0;
     border: 60px solid #ccc;
     background: @bluecolor;
@@ -333,8 +338,7 @@ html[lang=en] {
   }
   &:hover {
     .in-state {
-      display: block;
-      
+      display: block; 
     }
   }
 }
@@ -643,7 +647,6 @@ ul.social {
       line-height: 2em;
       height: 30px;
       overflow: hidden;
-      background: green;
       .out-state, .in-state {
         height: 30px;
         width: 100%;
@@ -699,6 +702,11 @@ ul.social {
     transition: all 0.3s ease;
   }
 }
+html.touch ul.social .in-state {
+  display: none !important;
+  opacity: 0 !important;
+  background: transparent;
+}
 
 
 #footer {
@@ -731,9 +739,6 @@ ul.social {
     }
     img {
       border-width: 40px;
-    }
-    .divider {
-      
     }
   }
   .language {
@@ -790,6 +795,7 @@ ul.social {
   }
   #tenants article {
     border-width: 10px;
+    min-height: 298px;
   }
   #workspace .desk-plans {
     td .sup {
