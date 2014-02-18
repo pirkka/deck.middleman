@@ -240,10 +240,14 @@ svg {
     line-height: 100%;
     text-align: center;
     color: #fff;
+    img {
+      display: block;
+      width: 100%;
+    }
   }
   object, .fallback {
     display: block;
-    width: 100%;
+    width: inherit;
   }
   .svg {
     fill: @bluecolor;
@@ -497,7 +501,7 @@ html.gecko #workspace .desk-plans {
   }
   form {
     &.disabled {
-      input, textarea {
+      input, textarea, button {
         opacity: 0.6;
         -webkit-transition: all 1s ease-in-out;
         -moz-transition: all 1s ease-in-out; 
@@ -506,7 +510,7 @@ html.gecko #workspace .desk-plans {
         -ms-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
       }
-      input[type=submit]:hover {
+      button[type=submit]:hover {
         background: @fgcolor;
         color: #fff;
         cursor: default;
@@ -565,7 +569,7 @@ html.gecko #workspace .desk-plans {
 				}
 			}
 		}
-		input[type=submit] {
+		button[type=submit] {
 			font-family: 'Avenir LT W01 55 Roman', Helvetica, Arial, Helvetica, sans-serif;
 			font-size: 14px;
 			display: block;
@@ -736,6 +740,9 @@ html.touch ul.social .in-state {
   #header {
     h1 {
       width: 100%;
+      .svg-fallback {
+        width: inherit;
+      }
     }
     img {
       border-width: 40px;

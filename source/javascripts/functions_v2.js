@@ -328,9 +328,10 @@ $("a.anchor[href*='#']").click(function(event) {
 
 // $('#header h1').load("/images/deck2.svg");
 
-if (!Modernizr.svg) {
-  console.log('no svg support, falling back to png');
-  $("h1").html('<img style="border: none;" src="/images/deck_logo.png"></img>');
+if ($("html.inlinesvg").length) {
+  if(!$("html.ios").length) {
+    $("h1").first().html('<img src="/images/deck-logo.svg" class="svg">');
+  }
 }
 
 
@@ -346,16 +347,17 @@ $(window).resize(function() {
   $('#map').css({ height: $(window).height() +'px' });
 });
 
-if(!$('html.touch').length) {
-  $('.social a').each(function() {
-  
-  	var link = $(this).html();
-  	var h = $(this).height()/2;
-  	
+$('.social a').each(function() {
+
+	var link = $(this).html();
+	var h = $(this).height()/2;
+	
+	if(!$('html.touch').length) {
   	$(this).empty().append('<span class="out-state">'+ link + '</span>').append('<span class="in-state">'+ link + '</span>').addClass('letterbox');
-  
-  });
-}
+  } else {
+    $(this).empty().append('<span class="out-state">'+ link + '</span>');
+  }
+});
 
 // form validation
 var $f = $("#enquiry");
