@@ -346,14 +346,16 @@ $(window).resize(function() {
   $('#map').css({ height: $(window).height() +'px' });
 });
 
-$('.social a').each(function() {
-
-	var link = $(this).html();
-	var h = $(this).height()/2;
-	
-	$(this).empty().append('<span class="out-state">'+ link + '</span>').append('<span class="in-state">'+ link + '</span>').addClass('letterbox');
-
-});
+if(!$('html.touch').length) {
+  $('.social a').each(function() {
+  
+  	var link = $(this).html();
+  	var h = $(this).height()/2;
+  	
+  	$(this).empty().append('<span class="out-state">'+ link + '</span>').append('<span class="in-state">'+ link + '</span>').addClass('letterbox');
+  
+  });
+}
 
 // form validation
 var $f = $("#enquiry");
