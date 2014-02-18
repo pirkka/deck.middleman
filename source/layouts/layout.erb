@@ -44,17 +44,9 @@
     {
       test : Modernizr.cssvwunit,
       nope : ['/javascripts/vminpoly/vminpoly.js']
-    },
-    {
-      test : Modernizr.svg,
-      complete : function () {
-        if(!Modernizr.svg) {
-          // /images/deck-logo.png --> /images/deck-logo.svg
-        }
-      }
     }
     ]); 
-  </script>
+    </script>
   
 </head>
 
@@ -70,7 +62,7 @@
 <div id="header">
 <header class="row container">
 	<h1>
-	  <img src="/images/deck-logo.png" class="svg-fallback" alt="Deck" />
+	  <img src="/images/deck-logo.svg" class="svg" alt="Deck" />
 	</h1>
 	<div class="divider"></div>	
 	<img src="/images/pursari2@2x.jpg" class="img" alt="Pursimiehenkatu 26" />
