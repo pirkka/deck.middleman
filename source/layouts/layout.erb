@@ -44,7 +44,17 @@
     {
       test : Modernizr.cssvwunit,
       nope : ['/javascripts/vminpoly/vminpoly.js']
-    }]); 
+    },
+    {
+      test : Modernizr.svg,
+      complete : function () {
+        if(!Modernizr.svg) {
+          // tähän?
+          // /images/deck-logo.png --> /images/deck-logo.svg
+        }
+      }
+    }
+    ]); 
   </script>
   
 </head>
