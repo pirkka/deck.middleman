@@ -433,7 +433,7 @@ window.log = function(){
 
 $(document).ready(function() { // jQuery
 
-window.viewportUnitsBuggyfill.init();
+viewportUnitsBuggyfill.init();
 
 // detect iphone/ipad
 if(navigator.userAgent.match(/iPhone/i)) { $("html").addClass("iphone").addClass("mobile").addClass("ios").addClass("phone"); }
