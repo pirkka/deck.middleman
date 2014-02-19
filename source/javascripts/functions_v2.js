@@ -27,10 +27,12 @@
   var dimensions;
   var declarations;
   var styleNode;
+  var applicable = true;
 
   function initialize(force) {
     if (!force && !/ip.+mobile.+safari/i.test(window.navigator.userAgent)) {
       // this buggyfill only applies to mobile safari
+      applicable = false;
       return;
     }
     
@@ -47,8 +49,10 @@
   }
 
   function refresh() {
-    findProperties();
-    updateStyles();
+    if(applicable) {
+      findProperties();
+      updateStyles();
+    }
   }
 
   function findProperties() {
@@ -532,7 +536,6 @@ $(window).resize(function() {
   // force repaint for vm/vh sizes (Chrome bug)
   causeRepaintsOn = $("body, .title");
   causeRepaintsOn.css("z-index", 1);
-  viewportUnitsBuggyfill.refresh();
   
   // resize map to fill screen
   $('#map').css({ height: $(window).height() +'px' });
