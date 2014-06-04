@@ -1,4 +1,28 @@
 ---
 title: Deck
 ---
-  
+<% c = 1%>  
+<% data.data.tenants.each do |tenant| %>
+  <% if c % 2 == 0 %>
+    <article class="sixcol last">
+  <% else %>
+    <article class="sixcol">
+  <% end %>
+    <h3><%= tenant.name %></h3>
+    <p><%= tenant.company %></p>
+    <ul class="social">
+      <% if tenant.linkedin %>
+      <li><a href="https://www.linkedin.com/in/<%= tenant.linkedin %>" class="linkedin"><span class="icon-linkedin"></span><span class="label">Linkedin</span></a></li>
+      <% end %>
+      <% if tenant.twitter %>
+      <li><a href="https://twitter.com/<%= tenant.twitter %>" class="twitter"><span class="icon-twitter"></span><span class="label">Twitter</span></a></li>
+      <% end %>
+      <% if tenant.www %>
+      <li><a href="http://<%= tenant.www %>" class="web"><span class="icon-link"></span><span class="label">Website</span></a></li>    
+      <% end %>
+    </ul>
+  </article>
+
+  <% c += 1 %>
+
+<% end %>
