@@ -3,7 +3,10 @@ tenants:
     www: www.pirkkaesko.com
     twitter: PirkkaEsko
     linkedin: pub/pirkka-esko/2/a21/478    
-
+  - name: Jani Komulainen
+    www: www.kelvin.fi
+    twitter: janikomu
+    linkedin: http://www.linkedin.com/in/jkomu
 languages:
   fi:
     description: Deck is a co-working space in Helsinki. Our tenants form a synergistic working community for design and software freelancers.
