@@ -1,9 +1,43 @@
 tenants:
   - name: Pirkka Esko
+    company: Pirkka Esko Design & Software
     www: www.pirkkaesko.com
     twitter: PirkkaEsko
-    linkedin: pub/pirkka-esko/2/a21/478    
-
+    linkedin: pirkkaesko
+  - name: Jonatan Hedberg
+    company: Formatura
+    www: www.formatura.org
+    linkedin: jonatanhedberg
+  - name: Joonas Jokela
+    company: Amanata Oy
+    twitter: joonasjokela
+  - name: Olli Jokinen
+    company: Ohjelmointityö Jokinen
+    linkedin: ojokinen
+  - name: Ilkka Järstä
+    company: Kelvin Creative Oy
+    www: www.kelvin.fi
+    twitter: ilu
+    linkedin: jarsta
+  - name: Jani Komulainen
+    company: Kelvin Creative Oy
+    www: www.kelvin.fi
+    twitter: janikomu
+    linkedin: jkomu
+  - name: Sakari Lehtonen
+    company: PsiTriangle.NET
+    twitter: inDigiNeous
+    www: psitriangle.net
+  - name: Dmitry Makarov
+    company: Mionex Oy
+    www: mionex.fi
+  - name: Cathy Nangini
+    company: Rails Girls
+  - name: Matti Tuominen
+    company: Prakt Oy
+    www: www.prakt.fi
+  - name: Qian Zhou
+    company: Rails Girls
 languages:
   fi:
     description: Deck is a co-working space in Helsinki. Our tenants form a synergistic working community for design and software freelancers.
