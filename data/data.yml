@@ -8,11 +8,9 @@ tenants:
     company: Formatura
     www: www.formatura.org
     linkedin: jonatanhedberg
-  - name: Tuukka Häkkinen
-    company: Chanko Media
-    www: tuuukka.com
-    twitter: tuuukka
-    linkedin: tuuukka
+  - name: Joonas Jokela
+    company: Amanata Oy
+    twitter: joonasjokela
   - name: Olli Jokinen
     company: Ohjelmointityö Jokinen
     linkedin: ojokinen
@@ -33,6 +31,13 @@ tenants:
   - name: Dmitry Makarov
     company: Mionex Oy
     www: mionex.fi
+  - name: Cathy Nangini
+    company: Rails Girls
+  - name: Matti Tuominen
+    company: Prakt Oy
+    www: www.prakt.fi
+  - name: Qian Zhou
+    company: Rails Girls
 languages:
   fi:
     description: Deck is a co-working space in Helsinki. Our tenants form a synergistic working community for design and software freelancers.
