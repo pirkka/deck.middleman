@@ -40,7 +40,7 @@
   box-sizing: border-box; 
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  *behavior: url(@{base-url}/css/boxsizing.htc);    
+  *behavior: url(http://kelvin.fi/client/deck/css/boxsizing.htc);    
 }
 
 #map *, form.disabled * {
@@ -240,10 +240,14 @@ svg {
     line-height: 100%;
     text-align: center;
     color: #fff;
+    img {
+      display: block;
+      width: 100%;
+    }
   }
   object, .fallback {
     display: block;
-    width: 100%;
+    width: inherit;
   }
   .svg {
     fill: @bluecolor;
@@ -497,7 +501,7 @@ html.gecko #workspace .desk-plans {
   }
   form {
     &.disabled {
-      input, textarea {
+      input, textarea, button {
         opacity: 0.6;
         -webkit-transition: all 1s ease-in-out;
         -moz-transition: all 1s ease-in-out; 
@@ -506,7 +510,7 @@ html.gecko #workspace .desk-plans {
         -ms-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
       }
-      input[type=submit]:hover {
+      button[type=submit]:hover {
         background: @fgcolor;
         color: #fff;
         cursor: default;
@@ -565,7 +569,7 @@ html.gecko #workspace .desk-plans {
 				}
 			}
 		}
-		input[type=submit] {
+		button[type=submit] {
 			font-family: 'Avenir LT W01 55 Roman', Helvetica, Arial, Helvetica, sans-serif;
 			font-size: 14px;
 			display: block;
@@ -597,6 +601,7 @@ html.gecko #workspace .desk-plans {
 
 #map {
   position: relative;
+  border: 60px solid #fff;
   header {
     position: absolute;
     top: 0;
@@ -724,9 +729,8 @@ html.touch ul.social .in-state {
   .pad {
     padding: 0;
   }
-  .title {
-    font-size: 2.2em;
-  	margin-bottom: 0.8em;
+  h1, .title {
+    font-size: 52px !important;
     text-align: center;
   }
   .divider {
@@ -736,6 +740,10 @@ html.touch ul.social .in-state {
   #header {
     h1 {
       width: 100%;
+      margin: 15% auto 0 auto;
+      .svg-fallback {
+        width: inherit;
+      }
     }
     img {
       border-width: 40px;
@@ -779,6 +787,26 @@ html.touch ul.social .in-state {
       text-align: left;
     }
   }
+  #map {
+    border: 50px solid #fff;
+  }
+  
+  .append-bottom {
+  	margin-bottom: 10%;
+  }
+  .append-bottom2 {
+  	margin-bottom: 15%;
+  }
+  .prepend-top {
+  	margin-top: 10%;
+  }
+  .prepend-top2 {
+  	margin-top: 15%;
+  }
+  .divider {
+    margin: 15% auto;
+  }
+  
 }
 
 /* Tablet */

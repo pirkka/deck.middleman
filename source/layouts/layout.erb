@@ -21,7 +21,7 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
-	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/bf47c891-a826-49ff-81ea-eeb9d9b23a1e.css"/>
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/bf47c891-a826-49ff-81ea-eeb9d9b23a1e.js"></script>
 	<!--[if IE]><![endif]-->
 	<!--[if IE 7]>
 	<link rel="stylesheet" href="assets/css/_patches/win-ie7.css" />
@@ -44,17 +44,9 @@
     {
       test : Modernizr.cssvwunit,
       nope : ['/javascripts/vminpoly/vminpoly.js']
-    },
-    {
-      test : Modernizr.svg,
-      complete : function () {
-        if(!Modernizr.svg) {
-          // /images/deck-logo.png --> /images/deck-logo.svg
-        }
-      }
     }
     ]); 
-  </script>
+    </script>
   
 </head>
 
@@ -147,7 +139,7 @@
 <div class="divider"></div>
 
 <section id="tenants">
-<div class="row container clearfix">
+<div class="row container">
   <header class="append-bottom">
     <h1 class="title center">Tenants</h1>
   </header>
@@ -241,7 +233,7 @@
 				<label for="fieldMessage">Message</label>
 				<textarea name="Message" id="fieldMessage" rows="3" class="required"></textarea>
 			</fieldset>
-			<input type="submit" value="Submit" />
+			<button type="submit" value="Submit">Submit</button>
 			
 			<p class="error">Please fill in all of the fields.</p>
 			<p class="success">Thanks! Your message was sent.</p>
